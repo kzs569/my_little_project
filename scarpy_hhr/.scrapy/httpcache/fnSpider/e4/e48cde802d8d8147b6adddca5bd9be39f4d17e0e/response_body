@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="面对对外开放新格局，公众在思想和心理上的准备是否已经足够？换言之，在日益开放的经济环境中，国民应如何坚持理性爱国？">
+<meta name="keywords" content="开放经济;理性爱国;在开放经济中应坚持理性爱国;中国金融新闻网">
+<title>在开放经济中应坚持理性爱国_财经时评_中国金融新闻网</title>
+<link media="all" type="text/css" rel="stylesheet" href="../../../img/main.css">
+<script type="text/javascript" src="../../../images/jquery1.83-min.js"></script>
+<script type="text/javascript" src="../../../img/index.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+<link media="all" type="text/css" rel="stylesheet" href="main.css">
+<style>
+.rt_list_hot a{width:290px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;display:block;}
+.rt_main .rt_list a{width:290px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;display:block; }
+.bdsharebuttonbox{float:right;}
+.TRS_Editor P{font-family:宋体;font-size:14px;margin-top:1em;margin-bottom:0em;line-height:2;}
+</style>  
+<SCRIPT LANGUAGE="JavaScript">
+
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+
+	if(_nPageCount == null || _nPageCount<=1){
+		return;
+	}
+
+var nCurrIndex = _nCurrIndex || 0;
+var currentPage =nCurrIndex+1;//所在页从1开始
+var countPage =_nPageCount;//共多少页
+var nextPage=currentPage+1;
+var prePage=currentPage-1;
+
+var html="";
+
+
+if(countPage>1&&currentPage!=1)
+	html=html+"<a href=\""+_sPageName+"."+_sPageExt+"\"  >首页</a><a href=\""+_sPageName+"."+_sPageExt+"\"  >上一页</a>";
+else 	html=html+"<a  >首页&nbsp;</a><a >上一页</a>";
+	
+
+
+if(currentPage<=5){
+	for(var i=1;i<=countPage ;i++){
+
+		if(i==currentPage){
+			html=html+"<a class=\"hover\">"+i+"</a>";
+		}else if(i==1){
+
+html=html+"<a href=\""+_sPageName+"."+_sPageExt+"\"  >"+i+"</a>";
+
+                   }else{
+			html=html+"<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\" >"+i+"</a>";
+		}
+
+	}
+
+}else if((countPage-currentPage)<=5&&(countPage-9)>0){
+
+	for(var i=(countPage-9);i<=countPage ;i++){
+
+		if(i==currentPage){
+			html=html+"<a  class=\"hover\">"+i+"</a>";
+		}else if(i==1){
+
+html=html+"<a href=\""+_sPageName+"."+_sPageExt+"\"  >"+i+"</a>";
+
+                   }else{
+			html=html+"<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\" >"+i+"</a>";
+		}
+
+	}
+
+}else if((countPage-currentPage)<=5&&(countPage-9)<=0){
+
+	for(var i=1;i<=countPage ;i++){
+
+		if(i==currentPage){
+			html=html+"<a class=\"hover\">"+i+"</a>";
+		}else if(i==1){
+
+html=html+"<a href=\""+_sPageName+"."+_sPageExt+"\"  >"+i+"</a>";
+
+                   }else{
+			html=html+"<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\" >"+i+"</a>";
+		}
+
+	}
+
+}else{
+
+	for(var i=(currentPage-5);i<=(currentPage+5);i++){
+
+		if(i==currentPage){
+			html=html+"<a class=\"hover\">"+i+"</a>";
+		}else if(i==1){
+
+html=html+"<a href=\""+_sPageName+"."+_sPageExt+"\"  >"+i+"</a>";
+
+                   }else{
+			html=html+"<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\" >"+i+"</a>";
+		}
+
+	}
+
+}
+
+
+
+//设置下一页代码 
+if(countPage>1&&currentPage!=countPage)
+	html=html+"<a href=\""+_sPageName+"_" + currentPage + "."+_sPageExt+"\"   >下一页</a><a href=\""+_sPageName+"_" + (countPage-1)+ "."+_sPageExt+"\"   >尾页</a>";
+else
+	html=html+"<a   >下一页</a><a    >尾页</a>";
+
+ 
+
+html=html+"<a  >共"+countPage+"页</a>"
+	
+ 
+
+ 
+document.write(html);
+
+}
+</SCRIPT>
+</head>
+
+<body>
+<div class="head">
+  <div class="logo"><a href="../../"><img src="../../../img/logo2.gif" /></a>
+  <div class="area"><div class="arealt"><div class="areart"><span>评论</span></div></div></div></div>
+    <div class="sm"><a href="../../../" target="_blank">返回首页</a></div>
+    <div class="search">
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=12844952168426865163' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+    </div>
+</div>
+
+<div class="nav">
+	<div class="nav_body">
+      <div class="nav_list">
+                <a href="../../" target="_blank">首页</a>
+
+<span>|</span><a href="../" target="_blank">财经时评</a>
+
+<span>|</span><a href="../../zj/" target="_blank">专家观点</a>
+
+<span>|</span><a href="../../wp/" target="_blank">快语微评</a>
+
+
+
+            </div>
+    </div>
+</div>
+<div class="main">
+	<div class="title">
+        <div class="title_content"><span>财经时评</span><font>CURRENT AFFAIRS</font></div>
+    </div>
+</div>
+<div class="main">
+	<div class="left">
+		<div class="content_dh">财经时评 / <span>正文</span></div>
+        <div class="content">
+        	
+            
+            
+            
+            <div class="content_title">在开放经济中应坚持理性爱国</div>
+            <div class="content_info">
+                <span>来源：金融时报-中国金融新闻网</span>
+                <span>作者：</span>
+            <!--    <span>责任编辑：yxt</span>-->
+                <span>发布日期：2018-05-29 09:34</span>
+               <!--   <span>访问量：<span id="art_139110"></span></span>-->
+				<div class="bdsharebuttonbox">
+                    <a href="#" class="bds_more" data-cmd="more"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
+            </div>
+          <div class="content_body" id="Zoom1">
+            
+<div class=TRS_Editor><div class="Custom_UnionStyle">
+<p>　　日前，中共中央政治局委员、北京市委书记蔡奇到北京中关村走访调研高新技术企业。在联想集团，他称赞联想创业以来扛起民族产业大旗，敢于在国际市场比高低，做了了不起的事。</p>
+<p>　　这番来自高层领导的肯定，当下对联想或许具有格外的意义。这是因为，近期，一个两年前的技术领域投票让联想陷入舆论漩涡。有报道称，在2016年的5G标准表决会议上，联想及旗下摩托罗拉支持了高通，而没有支持华为，于是有人质疑联想“不爱国”，甚至号召“抵制联想”。为此，联想集团发布声明辟谣，柳传志、杨元庆等几度发声，表示誓死打赢联想荣誉保卫战；马云、刘永好等企业家则发表公开信，声援联想。</p>
+<p>　　对于这一事件，主流媒体的观点普遍认为，不宜简单地因为一个技术标准的投票而给企业扣上“卖国”的帽子。笔者认为，联想事件对我们发出疑问，面对对外开放新格局，公众在思想和心理上的准备是否已经足够？换言之，在日益开放的经济环境中，国民应如何坚持理性爱国？</p>
+<p>　　今年是改革开放40年，国家主席习近平在博鳌亚洲论坛2018年年会开幕式上宣布了我国扩大开放的新举措。而近来的中美贸易争端、中兴事件等则提示国人，对外开放过程中也面临诸多挑战。这就需要民众做好心理调适，正确看待对外开放中的机遇和挑战，既坚持大国自信，维护正当权益，又尊重市场准则，做到理性爱国。</p>
+<p>　　理性爱国，意味着要尊重市场选择，不要道德绑架。联想这次争议事件的本质，就是如何看待企业在市场与技术选择中的自主决定权问题。两年前联想参与的那次投票，本身是国际性的技术会议，是按企业而非按国家投票，尊重企业的投票自主权，也是尊重国际规则的体现。在市场经济各领域，类似的“投票”还有很多，比如，企业上市选择国内还是海外，企业采购选择国货还是进口商品，企业雇员有多少外籍人士等，如果对这些纯经济或纯技术领域的选择都要贴上是否“爱国”的标签，恐怕会成为不可承受之重。当下强调营商环境，其实，企业在自主经营中能否面对一个理性的舆论环境，也是营商环境的重要方面。</p>
+<p>　　理性爱国，意味着要坚持务实精神，避免盲目虚夸。爱国既要自信，也要正确评估自身实力，不骄不躁。不久前，有网络媒体刊发《此人突然回国，美国慌了，日本傻眼，世界惊呆》的消息，渲染我国芯片技术的领先，但文中涉及的当事人很快出面澄清，称这是耸人听闻的夸大宣传。当下，坚持理性爱国，尤其要避免动辄“美国慌了”这类浮夸文风。毛泽东同志当年“继续保持谦虚、谨慎、不骄、不躁的作风”这一叮嘱，在当今仍有现实意义。实际上，此次面对中兴事件，我国公众已展示出理性精神，没有出现以往“抵制美货”等激进做法，毕竟，这次事件的症结是美方“不卖”。人们在批评美方不公正做法的同时，也在反思核心技术的差距并探寻今后的努力方向，这才是理性爱国的体现。</p>
+<p>　　理性爱国，还意味着既要敢于斗争，也要善于妥协。对于美方挑起的贸易战，我国政府第一时间就表达了“奉陪到底”和“一不会怕、二不会躲”的严正立场。但与此同时，中美双方也进行了多轮磋商，最终在近期发表了联合声明，宣布两国同意采取有效措施实质性减少美对华货物贸易逆差。贸易战没有赢家，只有互谅互让、各有妥协才能达成理想结果。正如《环球时报》社评所说，中美贸易战停战是两国共同胜利。从这个意义上说，以强硬姿态进行斗争和以灵活态度适当妥协，都是维护国家利益的不同方式，此次贸易战的过程也是对公众的一次理性爱国教育。</p>
+<p>　　在经济全球化深入发展的今天，理性爱国的一个重要体现在于，作为“理性经济人”的消费者的选择权应该受到尊重。消费者在经济活动中也不可避免地面对种种“投票”，比如，买东西是选择国货还是去海淘，找工作是去国企还是给外国老板打工，甚至出国旅游选择哪个目的地国家……如果这些“用脚投票”的行为都可能涉及“爱国”的标签，或者受到心理压力，那就必然会扭曲市场的决定性作用。而且，这种舆论氛围也会对我国的进一步对外开放造成阻碍。以金融业来说，今年以来，我国宣布了一系列金融对外开放举措，如取消银行的外资持股比例限制，允许外国银行在我国境内同时设立分行和子行等，今后我国金融消费者也会面对更多选择机会。但是，如果还有“把钱存在外资银行就是不爱国”这类想法，必然将不利于金融业对外开放的落实。</p>
+<p>　　总之，经济越是开放，爱国越要理性。理性爱国是深化对外开放的思想保障，也是一个开放大国国民的应有自信。</p>
+</div></div>
+		    <ul>
+              
+          	  <li></li>
+			  
+              </ul>
+
+            </div>
+			<div class="layout_page">
+<SCRIPT LANGUAGE="JavaScript">
+	createPageHTML(1, 0, "t20180529_139110", "html");	
+					</SCRIPT>
+
+            </div>
+<!--
+            <div class="tuijian_list">
+                <div class="tj_box"><a href="#" target="_blank"><img src="../../../images/temp16.jpg" /><p>中国金融新闻网微信公众号</p></a></div>
+                <div class="tj_box lt"><a href="#" target="_blank"><img src="../../../images/temp16.jpg" /><p>金融时报微信公众号</p></a></div>
+                <div class="tj_box lt"><a href="#" target="_blank"><img src="../../../images/temp16.jpg" /><p>财金时刻微信公众号</p></a></div>
+                <div class="tj_box lt"><a href="#" target="_blank"><img src="../../../images/temp16.jpg" /><p>中国金融新闻网微博</p></a></div>
+            </div>
+-->
+            <div class="zrbj">责任编辑：yxt</div>
+            <div class="tuijian_txt">
+                <div class="tuijian_title"><span>相关稿件</span></div>
+                <div class="tuijian_txt_body">
+                    <ul>
+
+
+                        
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="liuyan">
+            <!--PC版-->
+<div id="SOHUCS" sid="139110"></div>
+<script charset="utf-8" type="text/javascript" src="../../../images/changyan.js"></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cysgNhLgH',
+conf: 'prod_a2b8ed8a01890fe965fde1e6ba780a43'
+});
+</script>
+            </div>
+               
+            
+        </div>
+    </div>
+
+<div class="right">
+    	<div class="rt_main">
+        	<div class="title"><a  target="_blank">专题</a><span>ARTICLES</span></div>
+
+
+
+            <h3><a href="http://www.financialnews.com.cn/zt/2018zgfzgclt/" target="_blank">聚焦2018中国发展高层论坛</a></h3>
+            <a href="http://www.financialnews.com.cn/zt/2018zgfzgclt/" class="rt_img"><img src="../../../zt/xlbd/201803/W020180326513923446960.jpg" width=109 height=83 /></a>
+            <p class="rt_txt"><a href="http://www.financialnews.com.cn/zt/2018zgfzgclt/" target="_blank">聚焦2018中国发展高层论坛</a></p>
+
+
+
+            <div class="rt_list">
+            	<ul>
+
+                	<li><a href="http://goodnews.amac.org.cn/" target="_blank">中国资本市场新闻报道优秀作品奖</a></li>
+
+                	<li><a href="http://www.financialnews.com.cn/zt/2017nzzg/" target="_blank">2017金融时报年终专稿</a></li>
+
+                	<li><a href="http://www.financialnews.com.cn/zt/ghxnlt/" target="_blank">第十九届北大光华新年论坛</a></li>
+
+                	<li><a href="http://www.financialnews.com.cn/zt/jzgjldr/" target="_blank">金砖国家领导人第九次会晤</a></li>
+
+                	<li><a href="http://www.financialnews.com.cn/zt/zgyhjsc20zn/" target="_blank">中国银行间20周年</a></li>
+
+                	<li><a href="http://www.financialnews.com.cn/zt/qgjrgzhy/" target="_blank">聚焦第五次全国金融工作会议</a></li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+      <!--
+        <div class="rt_main t30">
+        	<div class="title"><a  target="_blank">热门新闻</a><span>HOT NEWS</span></div>
+            <div class="rt_list_hot">
+            	<ul>
+
+
+
+                </ul>
+            </div>
+        </div>
+        -->
+        <div class="rt_main t30">
+        	<div class="title"><a href="../../../sp/share/" target="_blank">视频新闻</a><span>VIDEO NEWS</span></div>
+
+
+
+
+            <div class="news_main">
+                <a href="../../../sp/share/201804/t20180402_135818.html" class="rt_img"><img src="../../../sp/share/201804/W020180402371875403962.jpg" /><span class="play_video"></span></a>
+                <p class="rt_video"><a href="../../../sp/share/201804/t20180402_135818.html" target="_blank">我国对美128项进口商品加征关税</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../sp/share/201803/t20180306_134206.html" class="rt_img"><img src="../../../sp/share/201803/W020180306378447769060.jpg" /><span class="play_video"></span></a>
+                <p class="rt_video"><a href="../../../sp/share/201803/t20180306_134206.html" target="_blank">十三届全国人大第一次会议开幕会</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../sp/share/201802/t20180222_133412.html" class="rt_img"><img src="../../../sp/share/201802/W020180222352073441400.jpg" /><span class="play_video"></span></a>
+                <p class="rt_video"><a href="../../../sp/share/201802/t20180222_133412.html" target="_blank">银监会：我国绿色信贷规模稳步增长</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../sp/share/201801/t20180120_131881.html" class="rt_img"><img src="../../../sp/share/201801/W020180120369063293201.jpg" /><span class="play_video"></span></a>
+                <p class="rt_video"><a href="../../../sp/share/201801/t20180120_131881.html" target="_blank">证监会：继续推动新三板市场监管条例出台</a></p>
+            </div>
+
+
+
+        </div>
+        
+        <div class="rt_main t30">
+        	<div class="title"><a href="" target="_blank">图片新闻</a><span>HPOTO NEWS</span></div>
+
+
+
+            <div class="news_main">
+                <a href="../../../qy/dfjr/201805/t20180529_139093.html" class="rt_img"><img src="../../../qy/dfjr/201805/W020180529340291537934.png" /></a>
+                <p class="rt_video"><a href="../../../qy/dfjr/201805/t20180529_139093.html" target="_blank">浙江萧山农商银行积极践行绿色发展理念</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../photo/201805/t20180528_139052.html" class="rt_img"><img src="../../../photo/201805/W020180528360442994175.jpg" /></a>
+                <p class="rt_video"><a href="../../../photo/201805/t20180528_139052.html" target="_blank">第二十二届圣彼得堡国际经济论坛举行全体会议</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../photo/201805/t20180528_139050.html" class="rt_img"><img src="../../../photo/201805/W020180528358234495687.jpg" /></a>
+                <p class="rt_video"><a href="../../../photo/201805/t20180528_139050.html" target="_blank">“2018亚太经合组织未来之声”青年创新论坛在京举行</a></p>
+            </div>
+
+
+            <div class="news_main">
+                <a href="../../../photo/201805/t20180528_139053.html" class="rt_img"><img src="../../../photo/201805/W020180528361205211188.jpg" /></a>
+                <p class="rt_video"><a href="../../../photo/201805/t20180528_139053.html" target="_blank">白俄罗斯希望与中国继续加强各领域务实合作——访白俄罗斯总理科比亚科夫</a></p>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+
+<script>
+$(function(){
+    var getImg=$(".content_body img");
+    if(getImg.length<1){
+        $(".content_body").append(" <div style='display:none;'><img src='../../../images/wxlogo.jpg' /></div>");
+        }
+    else{
+        return;
+    }
+})
+</script>
+
+<div class="footer">
+    <div class="footer_body">
+        <div class="center">
+            <div class="ft_link">
+                <p>友情链接</p>
+                <ul>
+                <li><a href="http://www.pbc.gov.cn/">中国人民银行</a></li>
+                <li><a href="http://www.nifa.org.cn/"> 中国互联网金融协会</a> </li>
+                <li><a href="http://www.xinhuanet.com/">新华网</a> </li>
+                <li> <a href="http://www.cebnet.com.cn/" >中国电子银行网  </a></li>
+                <li><a href="http://www.chinabond.com.cn/">中国债券信息网</a></li>
+                <li> <a href="http://www.shfinancialnews.com/"> 上海金融报 </a> </li>  
+                <li><a href="http://finance.sina.com.cn/">新浪财经 </a> </li> 
+                <li> <a href="http://money.163.com/"> 网易财经 </a>  </li>
+                 <li> <a href="http://www.yicai.com/">第一财经日报 </a></li> 
+                              
+
+                 <li><a href="http://www.cs.com.cn/">中证网</a>   </li> 
+                 <li> <a href="http://business.sohu.com/"> 搜狐财经 </a> </li>
+                  <li><a href="http://www.cet.com.cn/">中国经济时报 </a></li>   
+                 
+                   <li><a href="http://www.cyol.net/">中青在线</a></li>
+                   <li><a href="http://www.cfen.cn/"> 中国财经报网 </a>  </li> 
+                   <li><a href="http://www.chinafph.com/">中国金融出版社</a></li>
+                     
+                    
+                    <li><a href="http://www.zgjx.cn/"> 中国记协网 </a>  </li> 
+                     <li><a href="http://www.ce.cn/">   中国经济网 </a>  </li>       
+                     <li><a href="http://www.qq.com/">腾讯网</a></li> 
+                     <li> <a href="http://www.eeo.com.cn/"> 经济观察网 </a></li>  
+                       <li> <a href="http://www.chinanews.com/"> 中国新闻网</a> </li>     
+                        <li><a href="http://wallstreetcn.com/">华尔街见闻 </a></li>
+                        
+                        <li><a href="http://www.weiyangx.com/">未央网</a></li>
+                        <li><a href="http://www.haiwainet.cn/">海外网</a></li>
+                        <li><a href="http://www.cfcpn.com/">金采网</a></li>
+                        <li><a href="http://www.jrj.com.cn/">金融界</a></li>
+
+                        <li><a href="http://www.12377.cn/">互联网举报中心</a></li>
+                    </ul>
+                    </div>
+
+        </div>
+
+    </div>
+    <div class="footer_down">
+        <div class="footer_down_body">
+            <div class="left">
+                <p>中国金融新闻网由金融时报社主办</p>
+                <p>北京市公安局海淀分局备案号：1101084565   |   违法和不良信息举报电话 : 010-82198492</p>
+                <p>Copyright © 1998 - 2016   |   金融时报社版权所有   |   京ICP备:06002676号  </p>
+            </div>
+            <div class="right">
+                <div class="rt1">
+                    <p><a href="../../../images/about/map.htm" target="_blank">网站地图</a>　|　<a href="../../../images/about/content.html" target="_blank">联系我们</a>　|　<a href="../../../images/about/about.htm" target="_blank">关于我们</a>　|　<a href="http://www.financialnews.com.cn/cg/201701/t20170117_111368.html" target="_blank">广告刊例</a></p>
+                    <p>未经书面授权禁止复制或建立镜像</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>window._bd_share_config={
+    "common":{
+        "bdSnsKey":{},
+        "bdText":"",
+        "bdMini":"1",
+        "bdMiniList":false,
+        "bdPic":"",
+        "bdStyle":"1",
+        "bdSize":"16"
+        },
+        "share":{}
+        };  
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- PHPStat Start -->
+<script language="javascript">var __$nodeid='1326';</script>
+<script language="JavaScript" charset="utf-8" src="http://123.56.168.79/phpstat/count/abceffgh/abceffgh.js"></script><noscript><img src="http://123.56.168.79/phpstat/count/abceffgh/abceffgh.php" alt style="border:0" /></noscript>
+<!-- /PHPStat End -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef332043872ef35631fe61da6a334cee";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+    $(document).ready(function() {
+        $(".content img").lazyload({
+            placeholder : 'https://statics.21jingji.com/images/m/block_100x75.png',
+            effect : "fadeIn"
+        });
+    });
+</script>
+
+</body>
+</html>
