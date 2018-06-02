@@ -4,6 +4,8 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
+
 import traceback
 
 import pymysql
@@ -28,7 +30,7 @@ USER = settings.get("MYSQL_USER")
 PASSWD = settings.get("MYSQL_PASSWD")
 
 
-class ScarpyHhrPipeline(object):
+class ScrapyPipeline(object):
     logger = logging.getLogger("PipelingLog")
     logger.setLevel(level="DEBUG")
 
@@ -36,7 +38,7 @@ class ScarpyHhrPipeline(object):
         self.connect = pymysql.connect(host=HOST,
                                        db=DB,
                                        user=USER,
-                                       passwd=PASSWD,
+                                       #passwd=PASSWD,
                                        charset='utf8',
                                        use_unicode=True)
         self.cursor = self.connect.cursor()
@@ -160,3 +162,4 @@ class ScarpyHhrPipeline(object):
             except Exception as e:
                 self.logger.log(msg="hx sql error" + traceback.format_exc(), level=40)
         return item
+

@@ -14,7 +14,6 @@ BOT_NAME = 'Scrapy'
 SPIDER_MODULES = ['Scrapy.spiders']
 NEWSPIDER_MODULE = 'Scrapy.spiders'
 
-COMMANDS_MODULE = 'Scrapy.commands'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Scrapy (+http://www.yourdomain.com)'
@@ -28,7 +27,7 @@ CONCURRENT_REQUESTS = 32
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+#DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -48,17 +47,16 @@ DEFAULT_REQUEST_HEADERS = {
     'Connection': 'keep-alive',
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
 }
-
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Scrapy.middlewares.ScarpyHhrSpiderMiddleware': 543,
+#    'Scrapy.middlewares.ScrapySpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Scrapy.middlewares.ScarpyHhrDownloaderMiddleware': 543,
+#    'Scrapy.middlewares.ScrapyDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -70,13 +68,8 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'Scrapy.pipelines.ScarpyHhrPipeline': 300,
+    'Scrapy.pipelines.ScrapyPipeline': 300,
 }
-MYSQL_HOST = '127.0.0.1'
-MYSQL_DBNAME = 'financedb'
-MYSQL_USER = 'root'
-MYSQL_PASSWD = 'zishang2018@'
-MYSQL_PORT = 3306
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -93,11 +86,16 @@ MYSQL_PORT = 3306
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-# HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0
-# HTTPCACHE_DIR = 'httpcache'
-# HTTPCACHE_IGNORE_HTTP_CODES = []
-# HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-# HTTPERROR_ALLOWED_CODES = [404]
+#HTTPCACHE_ENABLED = True
+#HTTPCACHE_EXPIRATION_SECS = 0
+#HTTPCACHE_DIR = 'httpcache'
+#HTTPCACHE_IGNORE_HTTP_CODES = []
+#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-HTTPERROR_ALLOWED_CODES = [404]
+
+MYSQL_HOST = '127.0.0.1'
+MYSQL_DBNAME = 'financedb'
+MYSQL_USER = 'root'
+MYSQL_PASSWD = 'zishang2018@'
+MYSQL_PORT = 3306
+

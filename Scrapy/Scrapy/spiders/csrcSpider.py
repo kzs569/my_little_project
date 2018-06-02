@@ -7,7 +7,6 @@ from scrapy.http import Request
 from Scrapy.items import CsrcSpiderItem
 from fake_useragent import UserAgent
 import requests
-import logging as log
 
 headers = {'User-Agent': UserAgent().random}
 
@@ -37,16 +36,13 @@ class csrcSpider(scrapy.Spider):
                 item = CsrcSpiderItem()
                 href = info.xpath('a/@href')[0].extract()
                 title = info.xpath('a/text()')[0].extract()
-                # time = info.xpath('span/text()')[0].extract()
                 href = self.start_url_list[0] + href[1:]
 
                 self.log(message='Get title:' + title)
-                # self.log(message='Get time:' + time)
                 self.log(message='Get href:' + href)
 
                 item['title'] = title
                 item['href'] = href
-                # item['time'] = time
 
                 itemlist.append(item)
         except Exception as error:

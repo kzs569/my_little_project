@@ -37,17 +37,14 @@ class fnSpider(scrapy.Spider):
 
             for info in infos:
                 item = hxSpiderItem()
-                # time = info.xpath('span/text()')[0].extract()
                 href = info.xpath('a/@href')[0].extract()
                 title = info.xpath('a/text()')[0].extract()
 
                 self.log(message='Get title:' + title)
                 self.log(message='Get href:' + href)
-                # self.log(message='Get time:' + time)
 
                 print(title, href)
 
-                # item['time'] = time
                 item['href'] = href
                 item['title'] = title
                 itemlist.append(item)
