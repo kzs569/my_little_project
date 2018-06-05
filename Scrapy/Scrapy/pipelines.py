@@ -21,7 +21,7 @@ from scrapy.exporters import JsonItemExporter
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exceptions import DropItem
 from sqlalchemy.orm import sessionmaker
-from Scrapy.items import CsrcSpiderItem, fnSpiderItem, hxSpiderItem
+from Scrapy.items import CsrcSpiderItem, fnSpiderItem, hxSpiderItem, fsSpiderItem
 
 HOST = settings.get("MYSQL_HOST")
 PORT = settings.get("MYSQL_PORT")
@@ -38,7 +38,7 @@ class ScrapyPipeline(object):
         self.connect = pymysql.connect(host=HOST,
                                        db=DB,
                                        user=USER,
-                                       passwd=PASSWD,
+                                       # passwd=PASSWD,
                                        charset='utf8',
                                        use_unicode=True)
         self.cursor = self.connect.cursor()
@@ -161,5 +161,42 @@ class ScrapyPipeline(object):
                 self.logger.log(msg="hx 写入数据" + str(dict(item)), level=10)
             except Exception as e:
                 self.logger.log(msg="hx sql error" + traceback.format_exc(), level=40)
+        elif item.__class__ == fsSpiderItem:
+            try:
+                self.cursor.execute("""CREATE TABLE if not exists fs (
+                                      `title` TEXT(10000) NULL,
+                                      `href` VARCHAR(200) NOT NULL,
+                                      `time` DATETIME NULL,
+                                      `source` VARCHAR(45) NULL,
+                                      `content` TEXT(65535) NULL,
+                                      PRIMARY KEY (`href`))
+                                      ENGINE=InnoDB DEFAULT CHARSET=utf8  COLLATE=utf8_general_ci;
+                                    """)
+                self.cursor.execute("""select * from fs where href = %s""", item['href'])
+                ret = self.cursor.fetchone()
+                if ret:
+                    self.cursor.execute(
+                        """update fs set title = %s,href = %s,time = %s,
+                            content = %s,source = %s
+                            where href = %s""",
+                        (item['title'],
+                         item['href'],
+                         item['time'],
+                         item['contents'],
+                         item['source'],
+                         item['href']))
+                else:
+                    self.cursor.execute(
+                        """insert into fs(title,href,time,source,content)
+                          value (%s,%s,%s,%s,%s)""",
+                        (item['title'],
+                         item['href'],
+                         item['time'],
+                         item['source'],
+                         item['contents']))
+                self.connect.commit()
+                print('QAQ ----> fs 正在写入数据')
+                self.logger.log(msg="fs 正在写入数据" + str(dict(item)), level=10)
+            except Exception as e:
+                self.logger.log(msg="fs sql error" + traceback.format_exc(), level=40)
         return item
-

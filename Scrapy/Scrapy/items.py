@@ -9,11 +9,11 @@ import scrapy
 from scrapy import Field, Item
 
 
-
 class ScrapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
 
 class CsrcSpiderItem(Item):
     # define the fields for your item here like:
@@ -42,3 +42,11 @@ class hxSpiderItem(Item):
     href = Field()
     content = Field()
     source = Field()
+
+
+class fsSpiderItem(Item):
+    title = Field()
+    href = Field()
+    time = Field()
+    source = Field()
+    contents = Field()
