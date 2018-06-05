@@ -38,7 +38,7 @@ class ScrapyPipeline(object):
         self.connect = pymysql.connect(host=HOST,
                                        db=DB,
                                        user=USER,
-                                       # passwd=PASSWD,
+                                       passwd=PASSWD,
                                        charset='utf8',
                                        use_unicode=True)
         self.cursor = self.connect.cursor()
