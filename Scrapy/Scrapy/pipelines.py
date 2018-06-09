@@ -87,7 +87,7 @@ class ScrapyPipeline(object):
                 self.cursor.execute("""CREATE TABLE if not exists fn (
                                       `title` VARCHAR(45) NULL,
                                       `href` VARCHAR(200) NOT NULL,
-                                      `full_title` VARCHAR(45) NULL,
+                                      `full_title` VARCHAR(500) NULL,
                                       `source` VARCHAR(45) NULL,
                                       `time` DATETIME NULL,
                                       `contents` TEXT(65535) NULL,

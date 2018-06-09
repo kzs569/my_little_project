@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="192.168.31.128{python">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/robinkong/Documents/python" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>
