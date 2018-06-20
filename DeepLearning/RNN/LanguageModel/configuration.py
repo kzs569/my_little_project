@@ -31,3 +31,4 @@ SHARE_EMB_AND_SOFTMAX = True  # 在Softmax层和词向量层之间共享参数
 CHECKPOINT_PATH = './model/lmodel_cpkt'
 
 # 相对应tensorboard存储地址
+TENSORBOARD_PATH = '/home/robinkong/Documents/JupyterNotebook/log'

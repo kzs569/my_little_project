@@ -15,35 +15,6 @@ EVAL_DATA = configuration.VALID_DATA_OUTPUT  # 验证数据路径。
 TEST_DATA = configuration.TEST_DATA_OUTPUT  # 测试数据路径。
 
 
-# 使用给定的模型model在数据data上运行train_op并返回在全部数据上的perplexity值。
-def run_epoch(session, model, batches, train_op, output_log, step, saver, summary):
-    # 计算平均perplexity的辅助变量。
-    total_costs = 0.0
-    iters = 0
-
-    state = session.run(model.initial_state)
-    # 训练一个epoch。
-    for x, y in batches:
-        # 在当前batch上运行train_op并计算损失值。交叉熵损失函数计算的就是下一个单
-        # 词为给定单词的概率。
-        cost, state, _, summary = session.run(
-            [model.cost, model.final_state, train_op, summary],
-            {model.input_data: x, model.targets: y, model.initial_state: state})
-        total_costs += cost
-        iters += model.num_steps
-
-        # 只有在训练时输出日志。
-        if output_log and step % 100 == 0:
-            print("After %d steps, perplexity is %.3f" % (step, np.exp(total_costs / iters)))
-            if (step + 1) % 2000 == 0:
-                print("---------Saver saving----------")
-                saver.save(session, configuration.CHECKPOINT_PATH, global_step=step)
-        step += 1
-
-    # 返回给定模型在给定数据上的perplexity值。
-    return step, np.exp(total_costs / iters), summary
-
-
 def main():
     tf.reset_default_graph()
     # 定义初始化函数。
@@ -55,9 +26,7 @@ def main():
         train_model = ptb.PTBModel(True, configuration.TRAIN_BATCH_SIZE, configuration.TRAIN_NUM_STEP)
 
     saver = tf.train.Saver()
-    writer = tf.summary.FileWriter('./log/LanguageModel/', tf.get_default_graph())
-
-    merged_summary = tf.summary.merge_all()
+    writer = tf.summary.FileWriter(configuration.TENSORBOARD_PATH, tf.get_default_graph())
 
     # 训练模型。
     with tf.Session() as session:
@@ -81,12 +50,13 @@ def main():
             for x, y in train_batches:
                 # 在当前batch上运行train_op并计算损失值。交叉熵损失函数计算的就是下一个单
                 # 词为给定单词的概率。
-                cost, state, _ = session.run(
-                    [train_model.cost, train_model.final_state, train_model.train_op],
+                cost, state, _, summary = session.run(
+                    [train_model.cost, train_model.final_state, train_model.train_op, train_model.merged_summary],
                     {train_model.input_data: x, train_model.targets: y, train_model.initial_state: state})
                 total_costs += cost
                 iters += train_model.num_steps
 
+                writer.add_summary(summary, step)
                 # 只有在训练时输出日志。
                 if output_log and step % 100 == 0:
                     print("After %d steps, perplexity is %.3f" % (step, np.exp(total_costs / iters)))
@@ -94,7 +64,6 @@ def main():
                         print("---------Saver saving----------")
                         saver.save(session, configuration.CHECKPOINT_PATH, global_step=step)
                 step += 1
-            #writer.add_summary(summary)
 
             print("Epoch: %d Train Perplexity: %.3f" % (i + 1, np.exp(total_costs / iters)))
 
