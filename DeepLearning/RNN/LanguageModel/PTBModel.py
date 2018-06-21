@@ -43,10 +43,8 @@ class PTBModel(object):
         loss = tf.nn.sparse_softmax_cross_entropy_with_logits(
             labels=tf.reshape(self.targets, [-1]),
             logits=logits)
-        tf.summary.scalar('loss', tf.reduce_sum(loss))
 
         self.cost = tf.reduce_sum(loss) / self.batch_size
-        tf.summary.scalar('cost', self.cost)
 
         self.final_state = state
 
@@ -58,10 +56,9 @@ class PTBModel(object):
         # 控制梯度大小，定义优化方法和训练步骤。
         grads, _ = tf.clip_by_global_norm(
             tf.gradients(self.cost, trainable_variables), configuration.MAX_GRAD_NORM)
-        optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
+        optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
         self.train_op = optimizer.apply_gradients(zip(grads, trainable_variables))
 
-        self.merged_summary = tf.summary.merge_all()
 
     def build_rnn_graph_lstm(self, inputs):
         def make_cell():
