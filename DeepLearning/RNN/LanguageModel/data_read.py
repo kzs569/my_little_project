@@ -1,4 +1,5 @@
 import numpy as np
+import configuration
 # 从文件中读取数据，并返回包含单词编号的数组。
 def read_data(file_path):
     with open(file_path, "r") as fin:
@@ -26,3 +27,9 @@ def make_batches(id_list, batch_size, num_step):
     label_batches = np.split(label, num_batches, axis=1)
     # 返回一个长度为num_batches的数组，其中每一项包括一个data矩阵和一个label矩阵。
     return list(zip(data_batches, label_batches))
+
+
+if __name__ == '__main__':
+    print(make_batches(read_data(configuration.TRAIN_DATA_OUTPUT),
+                       configuration.TRAIN_BATCH_SIZE,
+                       configuration.TRAIN_NUM_STEP))

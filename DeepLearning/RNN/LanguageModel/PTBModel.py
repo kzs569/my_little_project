@@ -46,6 +46,9 @@ class PTBModel(object):
 
         self.cost = tf.reduce_sum(loss) / self.batch_size
 
+        with tf.name_scope('summary'):
+            tf.summary.scalar('cost', self.cost)
+
         self.final_state = state
 
         # 只在训练模型时定义反向传播操作。
@@ -59,6 +62,19 @@ class PTBModel(object):
         optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1)
         self.train_op = optimizer.apply_gradients(zip(grads, trainable_variables))
 
+        self.merged = tf.summary.merge_all()
+
+    def variable_summaries(self, var, name):
+        """Attach a lot of summaries to a Tensor."""
+        with tf.name_scope('summaries'):
+            mean = tf.reduce_mean(var)
+            tf.summary.scalar('mean/' + name, mean)
+            with tf.name_scope('stddev'):
+                stddev = tf.sqrt(tf.reduce_sum(tf.square(var - mean)))
+            tf.summary.scalar('sttdev/' + name, stddev)
+            tf.summary.scalar('max/' + name, tf.reduce_max(var))
+            tf.summary.scalar('min/' + name, tf.reduce_min(var))
+            tf.summary.histogram(name, var)
 
     def build_rnn_graph_lstm(self, inputs):
         def make_cell():

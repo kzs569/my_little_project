@@ -1,2 +1,13 @@
 
 CTR_Prediction/
+
+./DeepLearning/RNN/model/
+
+train.csv
+test.csv
+
+*.tar.gz
+*.pb
+*_ckpt_*
+*.pdf
+*.txt
