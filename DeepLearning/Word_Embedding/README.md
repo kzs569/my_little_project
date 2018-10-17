@@ -1,11 +1,11 @@
 Word-Embedding (词嵌入) 全整理
 ========================
-# Contents
+## Contents
 
-## [Word2Vec](./word2vec.md)
+- **[Word2Vec](./word2vec.md)**
 
-## [Glove](./glove.md)
+- **[Glove](./glove.md)**
 
-## [FasText](./fasttext.md)
+- **[FasText](./fasttext.md)**
 
-## [ELMo](./elmo.md)
+- **[ELMo](./elmo.md)**

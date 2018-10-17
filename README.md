@@ -1,3 +1,23 @@
-# my_little_project
-### 个人做的一些小项目，后期慢慢添加注释和其他内容
---2018.06.01
+主要内容
+====
+
+
+对机器学习和深度学习过程中项目的整理
+
+## *to do list*
+
+- 2018.10.17
+
+    **待整理blog**
+
+    [tf的seq2seq](https://daiwk.github.io/posts/platform-tensorflow-seq2seq.html)
+
+    [自己动手写word2vec](https://blog.csdn.net/u014595019/article/details/51907294)
+
+
+
+## *already done list*
+
+- 2018.10.17
+
+[简明条件随机场CRF介绍 | 附带纯Keras实现](https://mp.weixin.qq.com/s/BEjj5zJG3QmxvQiqs8P4-w)
