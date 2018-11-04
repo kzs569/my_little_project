@@ -13,14 +13,6 @@ import stem.connection
 from stem import Signal
 from stem.control import Controller
 
-def renew_connection():
-    with Controller.from_port(port=9051) as controller:
-        controller.authenticate(password='zishang2018@')
-        controller.signal(Signal.NEWNYM)
-        controller.close()
-
-
-
 
 class ImagescrapyDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -50,9 +42,15 @@ class ImagescrapyDownloaderMiddleware(object):
         :return: None
         '''
 
+        def renew_connection():
+            with Controller.from_port(port=9051) as controller:
+                controller.authenticate(password='zishang2018@')
+                controller.signal(Signal.NEWNYM)
+                controller.close()
+
         renew_connection()
 
-        request.meta['proxy'] = settings.get('HTTP_PROXY')
+        request.meta['proxy'] = 'http://127.0.0.1:8118'
 
         referer = request.meta.get('referer', None)
         if referer:
@@ -126,4 +124,3 @@ class ImagescrapyDownloaderMiddleware(object):
 #
 #     def spider_opened(self, spider):
 #         spider.logger.info('Spider opened: %s' % spider.name)
-

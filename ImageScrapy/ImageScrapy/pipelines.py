@@ -8,7 +8,6 @@ from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exceptions import DropItem
 from scrapy import Request
 import logging
-from fake_useragent import UserAgent
 from scrapy import settings
 import hashlib
 import requests

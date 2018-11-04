@@ -22,7 +22,7 @@ class imageSpider(scrapy.Spider):
 
     allow_domains = ['mzitu.com']
 
-    start_url_list = ['http://m.mzitu.com/all/']
+    start_url_list = ['http://www.mzitu.com/']
 
     def start_requests(self):
         for url in self.start_url_list:
@@ -31,22 +31,22 @@ class imageSpider(scrapy.Spider):
     def parse(self, response):
 
         itemlist = []
-        # try:
-        #     infos = Selector(response).xpath('//div[@class="archive-brick"]')
-        #     for info in infos:
-        #         item = ImagescrapyItem()
-        #         href = info.xpath("a[@class='clear']/@href")[0].extract()
-        #         title = info.xpath("string(a)")[0].extract()
-        #         self.log(message='Get title:' + title)
-        #         self.log(message='Get href:' + href)
-        #
-        #         item['title'] = title
-        #         item['href'] = href
-        #
-        #         itemlist.append(item)
-        # except Exception as error:
-        #     self.log(message='MainPage error:')
-        #     self.log(message=traceback.format_exc())
+        try:
+            infos = Selector(response).xpath('//div[@class="archive-brick"]')
+            for info in infos:
+                item = ImagescrapyItem()
+                href = info.xpath("a[@class='clear']/@href")[0].extract()
+                title = info.xpath("string(a)")[0].extract()
+                self.log(message='Get title:' + title)
+                self.log(message='Get href:' + href)
+
+                item['title'] = title
+                item['href'] = href
+
+                itemlist.append(item)
+        except Exception as error:
+            self.log(message='MainPage error:')
+            self.log(message=traceback.format_exc())
 
         item = ImagescrapyItem()
         item['href'] = "http://m.mzitu.com/137371"
